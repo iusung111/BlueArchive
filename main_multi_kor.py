@@ -988,19 +988,6 @@ def resetmara():
     print("OK")
     print("Touch Student", end="....")
     while 1:
-        randsleep(0.1, 0.3)
-        scr_img = background_screenshot(bluestackhw, 960, 572)
-        clickhere = pyautogui.locate(img_instudent, scr_img, confidence=0.8)
-        clickd(241, 501, 269, 534)
-        if clickhere is not None:
-            randsleep(0.1, 0.2)
-            click(clickhere[0], clickhere[1], clickhere[2], clickhere[3])
-            randsleep(0.1, 0.2)
-            click(clickhere[0], clickhere[1], clickhere[2], clickhere[3])
-            randsleep(0.1, 0.2)
-            click(clickhere[0], clickhere[1], clickhere[2], clickhere[3])
-            randsleep(0.1, 0.2)
-            click(clickhere[0], clickhere[1], clickhere[2], clickhere[3])
             break
 
     print("Touch Home", end="....")
